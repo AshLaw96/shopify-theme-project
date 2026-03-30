@@ -1,7 +1,6 @@
 <div class="dev-shoutout-wrapper" style="background-color: {{ section.settings.bg_color }}; padding: 40px 20px; text-align: center;">
   
   {% if section.settings.headshot != blank %}
-    {%- comment -%} Wrap the image in a link if a URL is provided {%- endcomment -%}
     {% if section.settings.linkedin_url != blank %}<a href="{{ section.settings.linkedin_url }}" target="_blank">{% endif %}
       <img 
         src="{{ section.settings.headshot | image_url: width: 150 }}" 
